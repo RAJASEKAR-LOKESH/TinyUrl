@@ -15,9 +15,9 @@ connection()
 app.use(express.json())
 app.use(cors());
 
-app.use("/api/user",userRoutes);
-app.use("/api/auth",authRoutes);
-app.use("/api/url",urlRoutes);
+app.use("/user",userRoutes);
+app.use("/auth",authRoutes);
+app.use("/url",urlRoutes);
 
 app.listen(PORT,()=>{
     console.log("Server Started at",PORT)
