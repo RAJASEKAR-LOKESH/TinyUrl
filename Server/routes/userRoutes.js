@@ -60,7 +60,7 @@ router.get("/", auth, async (req, res) => {
                     <div style="font-family: Arial, sans-serif; text-align: center;">
                         <h2>Account Activation</h2>
                         <p>Click the button below to activate your account to use Shorten URL application</p>
-                        <a href="http://localhost:5173/activationsuccess?email=${email}"
+                        <a href="https://u-r-l-shortner.netlify.app/activationsuccess?email=${email}"
                         style="
                             display: inline-block;
                             padding: 10px 20px;
@@ -136,7 +136,7 @@ router.post('/requestPasswordReset',async(req,res)=>{
                 <div style="font-family: Arial, sans-serif; text-align: center;">
                     <h2>Password Reset Request</h2>
                     <p>Click the button below to reset your password:</p>
-                    <a href="http://localhost:5173/newform?token=${token}&email=${email}"
+                    <a href="https://u-r-l-shortner.netlify.app/newform?token=${token}&email=${email}"
                        style="
                            display: inline-block;
                            padding: 10px 20px;
