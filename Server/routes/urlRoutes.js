@@ -25,7 +25,7 @@ router.post('/shorten', auth, async (req, res) => {
     
     try {
         const shortCode = crypto.randomBytes(4).toString('hex'); // Generates an 8-character code
-        const shortenUrl = `${req.protocol}://${req.get('host')}/api/url/${shortCode}`;
+        const shortenUrl = `${req.protocol}://${req.get('host')}/url/${shortCode}`;
         let url = await Url.findOne({ shortCode });
         if (!url) {
             url = new Url({ originalUrl, shortenUrl, shortCode });
